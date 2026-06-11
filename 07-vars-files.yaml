@@ -5,8 +5,8 @@
   - vars.yaml
   tasks:
    - name: print course information
-      ansible.builtin.debug:
-        msg: "course is {{COURSE}} ,{{DURATION}} , trainer is {{TRAINER}}"
+     ansible.builtin.debug:
+      msg: "course is {{COURSE}} ,{{DURATION}} , trainer is {{TRAINER}}"
      
 
     
