@@ -1,6 +1,6 @@
-- name: print he facts
+- name: print the facts
   hosts: web
   tasks:
-    - name: print the facts 
-      ansible.build.bedug:
-       msg: "{{ ansible_facts }}"
+  - name: print the facts 
+    ansible.build.bedug:
+      msg: "{{ ansible_facts }}"
