@@ -2,5 +2,5 @@
   hosts: web
   tasks:
   - name: print the facts 
-    ansible.build.bedug:
+    ansible.built.bedug:
       msg: "{{ ansible_facts }}"
