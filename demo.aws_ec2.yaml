@@ -1,0 +1,12 @@
+Plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1
+filters:
+  tag:Name: nginx
+  instance-state-name: running
+hostname:
+   # you can also specify a list in order of precedence for hostname variables.  
+   - private-ip-address
+compose:
+  # this sets the ansible_host variable to connect with the private IP address without changing the hsotname
+  ansible_host: private_ip_address
